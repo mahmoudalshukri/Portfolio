@@ -1,0 +1,136 @@
+/*
+@media (min-width: 576px) { ... }
+@media (min-width: 768px) { ... }
+@media (min-width: 992px) { ... }
+@media (min-width: 1200px) { ... }
+ */
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.landing{
+    background: linear-gradient(to right,  #754EF9 0%,#754EF9 40%,#fff 0%,#fff 100%);
+    width: 100%;
+    height: 800px;
+}
+.header{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.logo{
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+}
+.links{
+    display: grid;
+    place-items: center;
+}
+.links ul{
+    display: flex;
+}
+.links ul li{
+    list-style: none;
+    width: 150px;
+}
+.links ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #000;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+}
+.links ul li a.download{
+    background-color: #754EF9;
+    border-radius: 30px;
+    color: #fff;
+}
+.res-menu{
+    width: 100%;
+    background-color: #fff;
+}
+.header svg{
+    font-size: 40px;
+    display: none;
+    cursor: pointer;
+}
+.res-menu{
+    height: 400px;
+    z-index: 10;
+    display: none;
+}
+.res-menu-d{
+    display: block ;
+}
+.res-menu .menu{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.res-menu .menu ul{
+    padding: 0;
+}
+.res-menu .menu ul li{
+    list-style: none;
+}
+.res-menu .menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #000;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+}
+.res-menu .menu ul li a.download{
+    background-color: #fff;
+}
+@media (max-width: 768px) {
+    .header svg{
+        display: block;
+    }
+    .links ul li{
+        display: none;
+    }
+}
+.image{
+    height: 600px;
+    display: grid;
+    place-items: center;
+}
+.image img{
+    border-radius: 50%;
+    border: 50px solid #fff;
+    padding: 25px;
+}
+.content{
+    height: 600px;
+    display: grid;
+    place-items: center;
+}
+.content .text{
+    text-align: center;
+}
+.content h1{
+    text-transform: uppercase;
+    font-size: 100px;
+}
+.content h1 span{
+    color: #754EF9;
+}
+.content .o{
+    text-decoration: line-through #fff;
+    position: relative;
+}
+.content p{
+    font-size: 18px;
+}
+.content .video{
+    width: 100%;
+    text-align: right;
+}
